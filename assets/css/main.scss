@@ -1,0 +1,263 @@
+
+.cr-flex {
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.cr-grid--2\/1 {
+    display: grid;
+    grid-gap: 3em;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr) );
+    
+    .cr-grid__item:first-child, .single-product-main-image.alpha {
+        grid-column: auto / span 2;
+    }
+}
+
+body .breadcrumb {
+    right: initial;
+    color: initial;
+    padding: initial;
+    margin-bottom: initial;
+    background-color: initial; 
+    border-radius: initial;     
+    .breadcrumb-trail .trail-before {
+        padding-left: 0;
+    }           
+}
+html body#top.woocommerce-page {
+    .cr-flex select {
+        background-color: #eee;
+        border-color: #c5c5c5;
+        color: #000;
+        border-radius: 2px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+
+        &:hover {
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+    }
+}
+body#top.single-product {
+
+    .main-title.entry-title {
+        display: none;
+    }
+    
+    .stretch_full.container_wrap.alternate_color.dark_bg_color.title_container {
+        height: 45px;
+    }
+
+    .shipping {
+        display: block;
+        width: 100%;
+        height: 90%;
+        background-color: #f4f4f4;
+        box-shadow: 0 3px 4px rgba(0,0,0,0.18);
+    }
+
+    #av_section_1 {
+        background-color: transparent;
+        color: #000;
+        
+        .product_column {
+            margin-top: 15px;
+
+            .related.products {
+                h2 {
+                    color: #000;
+                }
+                
+                .inner_product.main_color.wrapped_style {
+                    border: 0;
+                    border-radius: 0;
+
+                    .inner_product_header {
+                        padding-left: 0;
+                        padding-right: 0;
+                        
+                        .inner_product_header_table {
+                            .price {
+                                font-size: 12px;
+                                font-weight: normal;
+                            }
+                        }  
+
+                    }
+                }
+
+            }
+
+
+        }
+
+
+    }
+
+    h1 {
+        font-family: HelveticaNeue, Helvetica;
+        font-size: 24px;
+    }
+
+    label {
+        font-weight: normal;
+        color: #919191;
+        font-size: 12px;
+    }
+    
+    .wc-chrisrenga-backdrop {
+        background-color: #F4F4F4;
+        position: absolute;
+        width: 100%;
+        height: 580px;
+        top: 0;
+        left: 0;
+        box-shadow: 0 3px 4px rgba(0,0,0,0.18);
+    }
+
+    .main_color {
+        background-color: transparent;
+    }
+
+    .title_container {
+        background-color: transparent;
+
+        .breadcrumb {
+            right: initial;
+            color: #838383;
+            padding: initial;
+            margin-bottom: initial;
+            background-color: initial; 
+            border-radius: initial;                
+            
+            a {
+                color: #838383;
+            }
+        }
+
+    }
+
+    .template-shop {
+        padding-top: 0;
+
+        .product {
+
+            .single-product-main-image {
+                width: 100%;
+                padding: 0;
+    
+                .woocommerce-product-gallery__wrapper a {
+                    box-shadow: 0 4px 8px rgba(0,0,0,0.28);
+                }
+            }
+            
+            .single-product-summary {
+
+                form.variations_form {
+                    margin: 0;
+                    padding: 0;
+                    border: none;
+                    background-color: transparent !important;
+                    
+                    .single_variation_wrap {
+                        margin: 0;
+                        
+                        .woocommerce-variation-price {
+                            margin-bottom: 15px;
+                        }
+
+                        .quantity {
+                            float: none;
+                            margin-bottom: 15px;
+
+                            input {
+                                border: 1px solid #c5c5c5;
+                                color: #000;
+                                border-radius: 3px;
+
+                                &:hover {
+                                    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+                                }
+
+                                &.input-text.qty.text {
+                                    background-color: transparent;
+                                    border: none;
+                                }
+                            }
+                        }
+                    }
+
+                }
+
+                .woocommerce-product-details__short-description {
+                    margin-top: 70px;
+                }                
+
+            }
+
+            .woocommerce-tabs.wc-tabs-wrapper {
+                padding: 0;
+
+                .panel {
+                    border: 0;
+                    border-top: 1px solid;
+                    border-radius: 0;                    
+                }
+                
+                ul.tabs {
+                    li {
+                        &.active {
+                            border-bottom: 2px solid #000;
+                        }
+                        
+                        a {
+                            border: 0;
+                            font-size: 10px;
+                            padding-left: 15px;
+                            padding-right: 15px;
+                            text-transform: uppercase;
+                        }                    
+                    }
+                }
+                
+                .woocommerce-Tabs-panel {
+                    h2 {
+                        display: none;
+                    }
+                }
+
+            }
+        }
+    }
+
+}
+
+@media (max-width: 989px) {
+
+    body#top.single-product {
+
+        .wc-chrisrenga-backdrop {
+            height: 520px;
+        }
+    }    
+}
+
+@media (max-width: 768px) { 
+    body#top.single-product {
+
+        h1.product_title.entry-title {
+            font-size: 18px;
+        }
+
+        .wc-chrisrenga-backdrop {
+            height: 380px;
+        }
+
+        .template-shop .product .single-product-summary .woocommerce-product-details__short-description {
+            margin-top: 15px;
+        }      
+    }
+}
