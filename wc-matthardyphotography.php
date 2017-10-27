@@ -33,9 +33,6 @@ if ( in_array('woocommerce/woocommerce.php',
                 
                 // called after all plugins have loaded
                 add_action( 'plugins_loaded', array( &$this, 'plugins_loaded' ) );
-                
-                // called just before the woocommerce template functions are included
-                add_action( 'init', array( &$this, 'include_template_functions' ), 20 );
 
                 add_action( 'wp_enqueue_scripts', array( $this, 'wp_enqueue_scripts' ) );
 
