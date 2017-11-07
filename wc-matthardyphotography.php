@@ -107,7 +107,7 @@ if ( in_array('woocommerce/woocommerce.php',
                     plugins_url( 'assets/css/main.min.css', __FILE__ )
                     ,
                     null, 
-                    '0.0.20'
+                    '0.1.0'
                 );
             }
 
