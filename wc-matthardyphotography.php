@@ -99,7 +99,7 @@ if ( in_array('woocommerce/woocommerce.php',
                     'wc-matthardyphotography', 
                     plugins_url( 'assets/js/main.min.js', __FILE__ ), 
                     array('jquery'), 
-                    '1.0.1'
+                    '0.0.1'
                 );
 
                 wp_enqueue_style(
@@ -107,7 +107,7 @@ if ( in_array('woocommerce/woocommerce.php',
                     plugins_url( 'assets/css/main.min.css', __FILE__ )
                     ,
                     null, 
-                    '0.1.1'
+                    '0.1.2'
                 );
             }
 

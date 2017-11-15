@@ -263,10 +263,10 @@ body#top.single-product {
 
 @media (max-width: 768px) { 
 
-    html body#top #wrap_all #header #header_main {
+    html body#top #wrap_all header#header #header_main {
 
         .logo img {
-            max-height: 40px;
+            max-height: 40px !important;
             padding-top: 5px;
         }
 
